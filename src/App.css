@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  
+}
+
+
+.title {
+  color: #fff;
+  font-size: 30px;
+}
+
+.loading {
+  color: #fff
+}
