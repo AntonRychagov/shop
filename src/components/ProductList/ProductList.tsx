@@ -60,7 +60,7 @@ const ProductList = observer(() => {
                   <CardActions sx={{ justifyContent: "end" }}>
                     <Button variant="contained">
                       <Link
-                        to={`${item.id}`}
+                        to={`/shop/productDetails/${item.id}`}
                         style={{ textDecoration: "none", color: "white" }}
                       >
                         Подробнее
