@@ -1,11 +1,13 @@
 import { useParams } from "react-router-dom";
 import productsStore from "../../store/products-store";
 import { Container, Divider, Paper, Typography } from "@mui/material";
-import PhotoCarousel from "../PhotoCarousel/PhotoCarousel";
-import Header from "../Header/Header";
+
+
 import { observer } from "mobx-react-lite";
 import { useEffect } from "react";
 import styled from "styled-components";
+import Header from "../../components/Header/Header";
+import PhotoCarousel from "../../components/PhotoCarousel/PhotoCarousel";
 
 const TEXT_BRAND = "Brand:";
 const TEXT_PRICE = "Price:";

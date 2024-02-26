@@ -1,19 +1,8 @@
 import { makeAutoObservable, runInAction } from "mobx";
-import { getData } from "../API/API";
-
-export type TProducts = {
-  id: number;
-  title: string;
-  description: string;
-  price: number;
-  stock: number;
-  brand: string;
-  thumbnail: string;
-  images: string[];
-};
+import { TProduct, getData } from "../api/API";
 
 class ProductsStore {
-  products: TProducts[] = [];
+  products: TProduct[] = [];
   isLoading = false;
   isError = false;
 

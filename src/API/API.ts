@@ -1,4 +1,19 @@
 import axios from "axios";
 
-export const getData = async () =>
-  (await axios.get("https://dummyjson.com/products")).data.products;
+export type TProduct = {
+  id: number;
+  title: string;
+  description: string;
+  price: number;
+  stock: number;
+  brand: string;
+  thumbnail: string;
+  images: string[];
+};
+
+export const getData = async () => {
+  const response = await axios.get<{ products: TProduct[] }>(
+    "https://dummyjson.com/products"
+  );
+  return response.data.products;
+};

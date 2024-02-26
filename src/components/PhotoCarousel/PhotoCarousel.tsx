@@ -11,7 +11,7 @@ const StyledSlider = styled.img`
   object-fit: cover;
 
   @media (min-width: 768px) {
-    width: 100%; /* Пример новой ширины для больших экранов */
+    width: 100%; 
     object-fit: contain;
   }
 `;

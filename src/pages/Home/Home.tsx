@@ -14,7 +14,8 @@ import {
 import styled from "styled-components";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import { Link } from "react-router-dom";
-import Header from "../Header/Header";
+import Header from "../../components/Header/Header";
+
 
 const LOADING = "Загрузка...";
 const ERROR = "ОШИБКА";
